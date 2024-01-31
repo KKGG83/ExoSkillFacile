@@ -270,8 +270,13 @@ nav a:hover{
     border-radius: 30px;
 }
 
+#section4{
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
 #section4 > article{
-    max-width: 640px;
     padding: 75px;
     text-align: center;
     margin: auto;
@@ -290,9 +295,8 @@ nav a:hover{
 }
 
 #section4 > div{
-    display: flex;
-    max-width: 75%;
-    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     justify-content: space-between;
     align-items: center;
 }
@@ -301,14 +305,20 @@ nav a:hover{
     background-color: #1e1d31;
     color: #fff;
     list-style: none;
-    width: 100%;
-    padding: 40px;
+    max-width: 925px;
+    padding: 80px 0px 80px 35px;
+    border-radius: 30px 0px 0px 30px;
 }
 
 #section4 h4{
     color: #30cd8a;
     font-size: 28px;
     font-family: 'Oswald',sans-serif;
+    margin-bottom: 15px;
+}
+
+#section4 > div > img{
+    width: 100%;
 }
 
 #section4 li{
@@ -316,5 +326,88 @@ nav a:hover{
 }
 
 #section4 li::before{
-    background-image: url(/img/Avantli.png)
+    content:url(/img/Avantli.png);
+    position: relative;
+    bottom: -6px;
+    left: -5px;
 }
+
+#section4 a{
+    text-decoration: none;
+    border: 1px solid #30cd8a;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 30px;
+    color: #fff;
+    transition: all 0.2s;
+    background-color: #30cd8a;
+    margin: auto;
+    font-size: 16px;
+}
+
+#section4 a:hover{
+    color: #30cd8a;
+    background-color: #fff;
+    transition: all 0.2s;
+}
+
+#section5{
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+#section5 > div{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section5 > div > article{
+    background-color: #1e1d31;
+    color: #fff;
+    list-style: none;
+    max-width: 925px;
+    padding: 80px 0px 80px 35px;
+    border-radius: 0px 30px 30px 0px;
+}
+
+#section5 a{
+    text-decoration: none;
+    border: 1px solid #30cd8a;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 30px;
+    color: #30cd8a;
+    transition: all 0.2s;
+    background-color: #fff;
+    margin-left: 750px;
+    font-size: 16px;
+}
+
+#section5 a:hover{
+    color: #fff;
+    background-color: #30cd8a;
+    transition: all 0.2s;
+}
+
+#section5 li{
+    margin-left: 20px;
+}
+
+#section5 li::before{
+    content:url(/img/Avantli.png);
+    position: relative;
+    bottom: -6px;
+    left: -5px;
+}
+
+#section6 > div{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    gap: 80px;
+    white-space-collapse: preserve-breaks;
+}  
+
+
